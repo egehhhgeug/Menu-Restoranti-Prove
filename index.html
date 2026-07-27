@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piceri Marku</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <a href="#top" class="header-name" >Pizzeri Marku</a>
+  <h5> Shtyp flamurin për shqip</h3>
+  <div class="lang-switch">
+
+    <button class="lang-flag active" data-lang="en" aria-label="English">
+      <img src="images/flag-uk.svg" alt="English">
+    </button>
+    <button class="lang-flag" data-lang="al" aria-label="Shqip">
+      <img src="images/flag-al.svg" alt="Shqip">
+    </button>
+  </div>
+</header>
+
+<div class="tricolor-strip" role="presentation" aria-hidden="true"></div>
+
+<main id="top">
+
+  <section class="banner">
+    <img src="images/glenov-brankovic-nulJA9vxJII-unsplash.jpg" alt="Restaurant interior" class="banner-img">
+    <div class="banner-overlay">
+      <p class="banner-eyebrow" data-en="Benvenuti" data-al="Mirë se vini">Benvenuti</p>
+      <img id="logo"src="logo.png"> 
+    </div>
+  </section>
+
+  <div class="tricolor-strip tricolor-strip--thin" role="presentation" aria-hidden="true"></div>
+
+  <section class="menu-wrap">
+
+    <!-- decorative Italy silhouette watermark -->
+    <img src="images/italy-silhouette.svg" alt="" class="italy-watermark" aria-hidden="true">
+
+    <h2 class="menu-title" data-en="Our Menu" data-al="Menuja Jonë">Our Menu</h2>
+    <p class="menu-sub" data-en="Tap the plus to see what's inside" data-al="Shtypni plusin për ta hapur më gjerë">
+    </p>
+
+    <div class="accordion" id="accordion">
+
+      <div class="acc-item">
+        <button class="acc-header" aria-expanded="false">
+          <span class="acc-title">
+            <span data-en="Classic Pizza" data-al="Pica Normale">Classic Pizza</span>
+          </span>
+          <span class="acc-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="acc-panel">
+          <ul class="menu-list">
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Milano Salami Pizza" data-al="Pica me Sallam Milano">Milano Salami Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">500 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, Milano salami)" data-al="(Salcë, mocarella, sallam milano)">(Tomato sauce, mozzarella, Milano salami)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Wurstel Pizza" data-al="Pica me Wurstel">Wurstel Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">500 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, wurstel sausage)" data-al="(Salcë, mocarella, Wurstel)">(Tomato sauce, mozzarella, wurstel sausage)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Tuna &amp; Onion Pizza" data-al="Pica me Ton dhe Qepë">Tuna &amp; Onion Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">500 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, tuna, onion)" data-al="(Salcë, mocarella, ton, qepë)">(Tomato sauce, mozzarella, tuna, onion)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Spicy Salami Pizza" data-al="Pica me Sallam Pikant">Spicy Salami Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">500 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, spicy salami)" data-al="(Salcë, mocarella, sallam pikant)">(Tomato sauce, mozzarella, spicy salami)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Calabrese Pizza" data-al="Pica Kalabrese">Calabrese Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">500 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, garlic, olive oil, chili pepper)" data-al="(Salcë, mocarella, hudhër, vaj ulliri, spec djegës)">(Tomato sauce, mozzarella, garlic, olive oil, chili pepper)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Calzone" data-al="Kalcone">Calzone</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, wurstel, ham, mushrooms)" data-al="(Salcë, mocarella, Wurstel, proshutë, kërpudha)">(Tomato sauce, mozzarella, wurstel, ham, mushrooms)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Four Seasons Pizza" data-al="Pica 4 Stinët">Four Seasons Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, ham, mushrooms, olives, peppers)" data-al="(Salcë, mocarella, proshutë, kërpudha, ullinj, speca)">(Tomato sauce, mozzarella, ham, mushrooms, olives, peppers)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Philadelphia &amp; Ham Pizza" data-al="Pica Filadelfia &amp; Proshutë">Philadelphia &amp; Ham Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, ham, Philadelphia cream cheese)" data-al="(Salcë, mocarella, proshutë, Filadelfia)">(Tomato sauce, mozzarella, ham, Philadelphia cream cheese)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Napoli Pizza" data-al="Pica Napoli">Napoli Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">500 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, anchovies)" data-al="(Salcë, mocarella, açuge)">(Tomato sauce, mozzarella, anchovies)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Sausage Pizza" data-al="Pica me Salsiçe">Sausage Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">500 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, fresh Italian sausage)" data-al="(Salcë, mocarella, salsiçe të freskëta)">(Tomato sauce, mozzarella, fresh Italian sausage)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Hungarian Salami Pizza" data-al="Pica me Sallam Hungarez">Hungarian Salami Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">650 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, Hungarian salami)" data-al="(Salcë, mocarella, sallam hungarez)">(Tomato sauce, mozzarella, Hungarian salami)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Capricciosa Pizza" data-al="Pica Kapriçoza">Capricciosa Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, ham, mushrooms, olives, chili peppers)" data-al="(Salcë, mocarella, proshutë, kërpudha, ullinj, speca djegës)">(Tomato sauce, mozzarella, ham, mushrooms, olives, chili peppers)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Vegetable Pizza" data-al="Pica me Perime">Vegetable Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, zucchini, eggplant, peppers, fresh tomatoes)" data-al="(Salcë, mocarela, kungull, patëllxhan, speca, domate të freskëta)">(Tomato sauce, mozzarella, zucchini, eggplant, peppers, fresh tomatoes)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Carbonara Pizza" data-al="Pica Karbonara">Carbonara Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, smoked pancetta, egg)" data-al="(Salcë, mocarela, pancetë e tymosur, vezë)">(Tomato sauce, mozzarella, smoked pancetta, egg)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Margherita Pizza" data-al="Pica Margherita">Margherita Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">500 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella)" data-al="(Salcë, mocarela)">(Tomato sauce, mozzarella)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Ham Pizza" data-al="Pica me Proshutë">Ham Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">450 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, ham)" data-al="(Salcë, mocarela, proshutë)">(Tomato sauce, mozzarella, ham)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Marinara Pizza" data-al="Pica Marinara">Marinara Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">400 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, garlic, olive oil, oregano, seasonal basil)" data-al="(Salcë, hudhër, vaj ulliri, rigon, borzilok stine)">(Tomato sauce, garlic, olive oil, oregano, seasonal basil)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Ham &amp; Mushroom Pizza" data-al="Pica me Proshutë dhe Kërpudha">Ham &amp; Mushroom Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, ham, mushrooms)" data-al="(Salcë, mocarela, proshutë, kërpudha)">(Tomato sauce, mozzarella, ham, mushrooms)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Parmigiana Pizza" data-al="Pica Parmixhan">Parmigiana Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">550 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, eggplant, Parmesan)" data-al="(Salcë, mocarela, patëllxhan, parmigiano)">(Tomato sauce, mozzarella, eggplant, Parmesan)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-header" aria-expanded="false">
+          <span class="acc-title">
+            <span data-en="Specialty Pizza" data-al="Pica Speciale">Specialty Pizza</span>
+          </span>
+          <span class="acc-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="acc-panel">
+          <ul class="menu-list">
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Prosciutto Crudo &amp; Porcini Pizza" data-al="Pica Krudo &amp; Porcini">Prosciutto Crudo &amp; Porcini Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">900 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, cherry tomatoes, Grana Padano, porcini mushrooms, prosciutto crudo)" data-al="(Salcë, mocarela, pomodorini, grana, kërpudha porcini, proshutë krudo)">(Tomato sauce, mozzarella, cherry tomatoes, Grana Padano, porcini mushrooms, prosciutto crudo)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Prosciutto Crudo &amp; Arugula Pizza" data-al="Pica Krudo &amp; Rukola">Prosciutto Crudo &amp; Arugula Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">900 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, cherry tomatoes, Grana Padano, prosciutto crudo, arugula)" data-al="(Salcë, mocarela, pomodorini, grana, proshutë krudo, rukola)">(Tomato sauce, mozzarella, cherry tomatoes, Grana Padano, prosciutto crudo, arugula)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Gorgonzola &amp; Spicy Salami Pizza" data-al="Pica Gorgonzola &amp; Sallam Pikant">Gorgonzola &amp; Spicy Salami Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">900 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Spicy salami, Gorgonzola, speck, garlic, onion, tomato)" data-al="(Sallam pikant, Gorgonzola, spek, hudhër, qepë, domate)">(Spicy salami, Gorgonzola, speck, garlic, onion, tomato)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Salmon Pizza" data-al="Pica me Salmon">Salmon Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">900 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Fresh mozzarella, salmon, arugula, Grana Padano)" data-al="(Mocarela e freskët, salmon, rukola, grana)">(Fresh mozzarella, salmon, arugula, Grana Padano)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Piadina" data-al="Piadina">Piadina</span>
+                <span class="dots"></span>
+                <span class="item-price">900 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Prosciutto crudo, gorgonzola, mushrooms, lettuce, fresh tomatoes)" data-al="(Proshutë krudo, gorgonzola, kërpudha, sallatë jeshile, domate të freskëta)">(Prosciutto crudo, gorgonzola, mushrooms, lettuce, fresh tomatoes)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Boscaiola Pizza" data-al="Pica Boskajola">Boscaiola Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">850 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, mixed mushrooms, fresh sausage)" data-al="(Salcë, mocarela, miks kërpudhash, salsiçe të freskëta)">(Tomato sauce, mozzarella, mixed mushrooms, fresh sausage)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Chef's Pizza" data-al="Pica Shef">Chef's Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">900 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, mixed vegetables, sausage, prosciutto crudo)" data-al="(Salcë, mocarela, miks perimesh, salsiçe, proshutë krudo)">(Tomato sauce, mozzarella, mixed vegetables, sausage, prosciutto crudo)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Prosciutto Crudo &amp; Burrata Pizza" data-al="Pica Krudo &amp; Burrata">Prosciutto Crudo &amp; Burrata Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">900 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Mozzarella, prosciutto crudo, burrata)" data-al="(Mocarela, proshutë krudo, burrata)">(Mozzarella, prosciutto crudo, burrata)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Tuna &amp; Gorgonzola Pizza" data-al="Pica Tonno &amp; Gorgonzola">Tuna &amp; Gorgonzola Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">900 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Special gorgonzola, fresh tomatoes, arugula, Grana Padano, tuna)" data-al="(Gorgonzola special, domate të freskëta, rukola, grana, ton)">(Special gorgonzola, fresh tomatoes, arugula, Grana Padano, tuna)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Prosciutto Crudo &amp; Mascarpone Pizza" data-al="Pica Krudo &amp; Mascarpone">Prosciutto Crudo &amp; Mascarpone Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">850 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, prosciutto crudo, mascarpone)" data-al="(Salcë, mocarela, proshutë krudo, maskarpone)">(Tomato sauce, mozzarella, prosciutto crudo, mascarpone)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Sardine Pizza" data-al="Pica me Sardele">Sardine Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">800 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, fresh tomatoes, fresh mozzarella, sardines)" data-al="(Salcë, mocarela, domate të freskëta, mocarela e freskët, sardele)">(Tomato sauce, mozzarella, fresh tomatoes, fresh mozzarella, sardines)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Chef's Surprise Pizza 🎁" data-al="Pica Surpriza 🎁">Chef's Surprise Pizza 🎁</span>
+                <span class="dots"></span>
+                <span class="item-price">850 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Let the chef surprise you)" data-al="(Lëre shefin t'ju surpizojë)">(Let the chef surprise you)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Majalona Pizza" data-al="Pica Majalona">Majalona Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">850 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, mixed cured meats)" data-al="(Salcë, mocarela, miks proshutash)">(Tomato sauce, mozzarella, mixed cured meats)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Primavera Pizza" data-al="Pica Primavera">Primavera Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">850 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Fresh mozzarella, tomato, arugula, prosciutto crudo)" data-al="(Mocarela e freskët, domate, rukola, proshutë krudo)">(Fresh mozzarella, tomato, arugula, prosciutto crudo)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Speck &amp; Gorgonzola Pizza" data-al="Pica Spek &amp; Gorgonzola">Speck &amp; Gorgonzola Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">850 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, speck, gorgonzola)" data-al="(Salcë, mocarela, spek, gorgonzola)">(Tomato sauce, mozzarella, speck, gorgonzola)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Prosciutto Crudo &amp; Gorgonzola Pizza" data-al="Pica Krudo &amp; Gorgonzola">Prosciutto Crudo &amp; Gorgonzola Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">850 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, speck, prosciutto crudo)" data-al="(Salcë, mocarela, spek, krudo)">(Tomato sauce, mozzarella, speck, prosciutto crudo)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Matriciana Pizza" data-al="Pica Matriciana">Matriciana Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">750 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, pancetta, onion, fresh tomatoes)" data-al="(Salcë, mocarela, pancetë, qepë, domate të freskëta)">(Tomato sauce, mozzarella, pancetta, onion, fresh tomatoes)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Signature Pizza" data-al="Pica Ime">Signature Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">700 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, pancetta, zucchini, garlic, spicy salami, village cheese, tomato)" data-al="(Salcë, pancetë, kungull, hudhër, sallam pikant, djathë fshati, domate)">(Tomato sauce, pancetta, zucchini, garlic, spicy salami, village cheese, tomato)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Saporita Pizza" data-al="Pica Saporita">Saporita Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">750 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, spicy salami, onion, gorgonzola, chili pepper)" data-al="(Salcë, mocarela, sallam pikant, qepë, gorgonzola, spec djegës)">(Tomato sauce, mozzarella, spicy salami, onion, gorgonzola, chili pepper)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Mix Pizza" data-al="Pica Miks">Mix Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">650 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, spicy salami, ham, mushrooms, peppers)" data-al="(Salcë, mocarela, sallam pikant, proshutë, kërpudha, speca)">(Tomato sauce, mozzarella, spicy salami, ham, mushrooms, peppers)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Four Cheese Pizza" data-al="Pica 4 Djathërat">Four Cheese Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">650 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, gorgonzola, Parmesan, fresh mozzarella)" data-al="(Salcë, mocarela, gorgonzola, parmigiano, mocarela e freskët)">(Tomato sauce, mozzarella, gorgonzola, Parmesan, fresh mozzarella)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Romana Pizza" data-al="Pica Romana">Romana Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">720 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, anchovies, capers)" data-al="(Salcë, mocarela, açuge, kapori)">(Tomato sauce, mozzarella, anchovies, capers)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Ricotta &amp; Spinach Pizza" data-al="Pica Rikota &amp; Spinaq">Ricotta &amp; Spinach Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">780 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, ricotta, spinach)" data-al="(Salcë, mocarela, rikota, spinaq)">(Tomato sauce, mozzarella, ricotta, spinach)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Prosciutto Crudo &amp; Mushroom Pizza" data-al="Pica Krudo &amp; Kërpudha">Prosciutto Crudo &amp; Mushroom Pizza</span>
+                <span class="dots"></span>
+                <span class="item-price">960 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Tomato sauce, mozzarella, prosciutto crudo, mushrooms)" data-al="(Salcë, mocarela, proshutë krudo, kërpudha)">(Tomato sauce, mozzarella, prosciutto crudo, mushrooms)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-header" aria-expanded="false">
+          <span class="acc-title">
+            <span data-en="Starters &amp; Salads" data-al="Antipasta &amp; Sallata">Starters &amp; Salads</span>
+          </span>
+          <span class="acc-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="acc-panel">
+          <ul class="menu-list">
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Village Salad (large)" data-al="Sallatë Fshati (e madhe)">Village Salad (large)</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Arugula Salad (medium)" data-al="Sallatë Rukola (e mesme)">Arugula Salad (medium)</span>
+                <span class="dots"></span>
+                <span class="item-price">600 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Arugula Salad (large)" data-al="Sallatë Rukola (e madhe)">Arugula Salad (large)</span>
+                <span class="dots"></span>
+                <span class="item-price">960 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Chef's Fantasy" data-al="Fantazia e Shefit">Chef's Fantasy</span>
+                <span class="dots"></span>
+                <span class="item-price">1440 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Chef's Panini" data-al="Panine e Shefit">Chef's Panini</span>
+                <span class="dots"></span>
+                <span class="item-price">960 Lek</span>
+              </div>
+              <p class="item-ingredients" data-en="(Prosciutto crudo, spicy salami, tuna, gorgonzola)" data-al="(Proshutë krudo, sallam pikant, ton, gorgonzola)">(Prosciutto crudo, spicy salami, tuna, gorgonzola)</p>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Chef's Salad" data-al="Sallatë e Shefit">Chef's Salad</span>
+                <span class="dots"></span>
+                <span class="item-price">960 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Parma Prosciutto &amp; Buffalo Mozzarella" data-al="Krudo Parma dhe Bufala">Parma Prosciutto &amp; Buffalo Mozzarella</span>
+                <span class="dots"></span>
+                <span class="item-price">1800 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Mortadella &amp; Buffalo Mozzarella" data-al="Mortadela dhe Bufala">Mortadella &amp; Buffalo Mozzarella</span>
+                <span class="dots"></span>
+                <span class="item-price">1800 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Prosciutto Crudo &amp; Melon (seasonal)" data-al="Krudo dhe Pjepër (në sezon)">Prosciutto Crudo &amp; Melon (seasonal)</span>
+                <span class="dots"></span>
+                <span class="item-price">1440 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Prosciutto Crudo &amp; Grana Padano" data-al="Krudo dhe Grana">Prosciutto Crudo &amp; Grana Padano</span>
+                <span class="dots"></span>
+                <span class="item-price">1440 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Cured Meat &amp; Cheese Platter (medium)" data-al="Miks Proshutërash dhe Djathërash (e mesme)">Cured Meat &amp; Cheese Platter (medium)</span>
+                <span class="dots"></span>
+                <span class="item-price">2400 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Cured Meat &amp; Cheese Platter (large)" data-al="Miks Proshutërash dhe Djathërash (e madhe)">Cured Meat &amp; Cheese Platter (large)</span>
+                <span class="dots"></span>
+                <span class="item-price">3000 Lek</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-header" aria-expanded="false">
+          <span class="acc-title">
+            <span data-en="Extras" data-al="Kërkesa Extra">Extras</span>
+          </span>
+          <span class="acc-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="acc-panel">
+          <ul class="menu-list">
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Ham" data-al="Proshutë">Ham</span>
+                <span class="dots"></span>
+                <span class="item-price">360 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Speck" data-al="Spek">Speck</span>
+                <span class="dots"></span>
+                <span class="item-price">360 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Cheeses" data-al="Djathëra">Cheeses</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-header" aria-expanded="false">
+          <span class="acc-title">
+            <span data-en="Drinks" data-al="Pije">Drinks</span>
+          </span>
+          <span class="acc-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="acc-panel">
+          <ul class="menu-list">
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Water 0.5l" data-al="Ujë 0.5l">Water 0.5l</span>
+                <span class="dots"></span>
+                <span class="item-price">85 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Water 1l" data-al="Ujë 1l">Water 1l</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Coca-Cola" data-al="Coca-Cola">Coca-Cola</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Fanta" data-al="Fanta">Fanta</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Sprite" data-al="Sprite">Sprite</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Orange Soda" data-al="Orange Soda">Orange Soda</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Lemon Soda" data-al="Lemon Soda">Lemon Soda</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Crodino" data-al="Crodino">Crodino</span>
+                <span class="dots"></span>
+                <span class="item-price">120 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Schweppes" data-al="Schweppes">Schweppes</span>
+                <span class="dots"></span>
+                <span class="item-price">120 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Bravo" data-al="Bravo">Bravo</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="B-52" data-al="B-52">B-52</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Red Bull" data-al="Red Bull">Red Bull</span>
+                <span class="dots"></span>
+                <span class="item-price">300 Lek</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-header" aria-expanded="false">
+          <span class="acc-title">
+            <span data-en="Beer" data-al="Birra">Beer</span>
+          </span>
+          <span class="acc-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="acc-panel">
+          <ul class="menu-list">
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Korça" data-al="Korça">Korça</span>
+                <span class="dots"></span>
+                <span class="item-price">180 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Tuborg" data-al="Tuborg">Tuborg</span>
+                <span class="dots"></span>
+                <span class="item-price">300 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Peroni" data-al="Peroni">Peroni</span>
+                <span class="dots"></span>
+                <span class="item-price">300 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Heineken" data-al="Heineken">Heineken</span>
+                <span class="dots"></span>
+                <span class="item-price">300 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Paulaner" data-al="Paulaner">Paulaner</span>
+                <span class="dots"></span>
+                <span class="item-price">480 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Stella Artois" data-al="Stella Artois">Stella Artois</span>
+                <span class="dots"></span>
+                <span class="item-price">300 Lek</span>
+              </div>
+            </li>
+            <li>
+              <div class="item-row">
+                <span class="item-name" data-en="Franziskaner" data-al="Franziskaner">Franziskaner</span>
+                <span class="dots"></span>
+                <span class="item-price">450 Lek</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="tricolor-strip" role="presentation" aria-hidden="true"></div>
+
+  <footer class="site-footer">
+    <p data-en="Buon appetito!" data-al="Ju bëftë mirë!"></p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
